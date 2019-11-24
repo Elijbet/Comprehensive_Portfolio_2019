@@ -90,7 +90,8 @@
         } else if(this.$route.params.section === "graphic" ) {
           return [{placeholder: 'https://drive.google.com/uc?id=0B4qfPIQ8j-PYSEZtYl9QZHJVQTg', project: 'Seafood Restaurant', tech: 'Adobe Suite'}, {placeholder: 'https://drive.google.com/uc?id=0B4qfPIQ8j-PYUjR3MFRPX2tyeHc', project: 'Popularizing Education', tech: 'Hand Sketches, Adobe Suite'}, {placeholder: 'https://drive.google.com/uc?id=1M8gA62P11WrWVf0LABvwdHEn1hjLZR_w', project: 'Wild Oak Cafe', tech: 'Hand Sketches'}]
         } else if(this.$route.params.section === "uxui" ) {
-          return [{placeholder: 'https://source.unsplash.com/B0kNuKcK7q0/', project: 'Game Room', tech: '3ds Max'}, {placeholder: 'https://source.unsplash.com/1IQEuE3yPj8/', project: 'Kitchen', tech: '3ds Max'}]
+          return [{placeholderPDF: 'https://codepen.io/elijbet/full/LYYzEyY', project: 'Masonry Image Gallery with Animated Corner Fold', tech: 'Vue'}, {placeholderPDF: 'https://codepen.io/elijbet/full/xxxRXbm', project: 'Image mask skews on scroll', tech: 'Small animation project taking advantage of the scroll position.'}, {placeholderPDF: 'https://codepen.io/elijbet/full/vYYyNVr', project: 'Panel of Square Images', tech: 'Vue and CSS practice layout.'}, {placeholderPDF: 'https://codepen.io/elijbet/full/wvvvYRd', project: 'Color Letters on Hover', tech: 'Using Data attribute to create a hover animation.'}, {placeholderPDF: 'https://codepen.io/elijbet/full/ZEEbaWv', project: 'Sliding Side Menu with Styled Cursor', tech: 'Hover on the right side red strip to open a menu panel. Study of slide in panels.'},  {placeholderPDF: 'https://codepen.io/elijbet/full/eYOabLb', project: 'Masonry Carousel', tech: 'Study of a Vue Carousel Layout of Stacked Images.'}, {placeholderPDF: 'https://codepen.io/elijbet/full/zYYdjYy', project: 'Donuts', tech: 'CSS. Fun donut shaped images. Practice absolute positioning and background-clipping.'}]
+          // {placeholderPDF: 'https://codepen.io/elijbet/full/dyyzRva', project: 'Different Scroll Speeds', tech: 'Taken some jquery version of parallax boxes moving at different speeds and converted into Vue.'}, 
         } else {
           return false
         }
@@ -181,6 +182,8 @@ h3 {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5em;
   font-weight: 100;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 p {
   margin: 0;

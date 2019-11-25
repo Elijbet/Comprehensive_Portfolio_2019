@@ -36,6 +36,15 @@
             id="show-modal">
           </div>
         </div>
+        <div 
+          v-if="item.placeholderImageLink"
+          class="flex center">
+          <a 
+            :href="item.webLink"
+            class="flex center">
+            <img :src="item.placeholderImageLink" />
+          </a>
+        </div>
         <h3 class="header">
         PROJECT: {{ item.project.toUpperCase() }}
         </h3>
@@ -84,7 +93,7 @@
     computed: {
       itemsConditional() {
         if(this.$route.params.section === "code" ) {
-          return [{placeholder: 'https://source.unsplash.com/O6fs4ablxw8/', project: 'Residential', tech: 'Sketchup'}, {placeholder: 'https://source.unsplash.com/IQIkl2iGnbw/', project: 'Commercial', tech: '3ds Max'}, {placeholder: 'https://source.unsplash.com/O6fs4ablxw8/', project: 'Residential', tech: 'Sketchup'}, {placeholder: 'https://source.unsplash.com/IQIkl2iGnbw/', project: 'Commercial', tech: '3ds Max'}]
+          return [{placeholderImageLink: 'https://drive.google.com/uc?id=1jS0Maw5UDHBQmqHi7rxD_de9e1K4PiXG', webLink: 'https://github.com/Elijbet/Move-Planner-App-React/blob/master/README.md', project: 'Move Planner', tech: 'React. An application that brings you all the information you need before you move to a new location. It provides street view of the address, an article on the city from Wikipedia, and a list of NYT articles.'}, {placeholderImageLink: 'https://drive.google.com/uc?id=1yKk-4_Jy9c6bWBjYSpmFjXiFZC3QRViE', webLink: 'https://github.com/Elijbet/Gif_Theatre/blob/master/README.md', project: 'Gif Theatre', tech: 'React. Make a gif theater that shuffles random gifs with an animated transition. Swap it, if the user clicks on a thumbnail, and give an option to resume random shufle upon click on resume button.'}, {placeholderImageLink: "https://drive.google.com/uc?id=1x8u7vQGcZQXZJvFlgR5DJBOjqqiJXKvY", webLink: "https://github.com/Elijbet/DictionaryApp/blob/master/README.md", project: 'Dictionary App', tech: 'Rails Dictionary App.'}, {placeholderImageLink: 'https://drive.google.com/uc?id=1MDmxLNl2q5f0cbvVlD6ZgE9ftM-hLsOH', webLink: 'https://github.com/Elijbet/Karma_Bank', project: 'Karma Bank', tech: 'Rails API & Vue front. Karma Bank is a positive affirmation app that logs your positive experiences and gives them out later to brighten up your day.'}, {placeholderImageLink: 'https://drive.google.com/uc?id=1_c1zrgtJLEU9J9cy6ZFhTIszcfQm66pK', webLInk: 'https://github.com/Elijbet/Goodreads_clone/blob/master/README.md', project: 'Readers App', tech: 'Vue Goodreads Clone with API from Goodreads and Firebase backend. Deploy a Vue.js App with Firebase Hosting. This app is written a while ago. Working on an alternative Wonk App project with a new approach.'}]
         } else if(this.$route.params.section === "interior" ) {
           return [{placeholderPDF: 'https://drive.google.com/uc?id=0B4qfPIQ8j-PYaUZoN3QwYUxDNkk#toolbar=0', project: 'Portfolio', tech: 'Adobe Suite, SketchUp, 3ds Max, AutoCAD, Sketches, Pencil Drawing'}, {placeholderPDF: 'https://drive.google.com/uc?id=18x0UyjVJkJdL1siBNjcpuUsvHbwI-gc6#toolbar=0', project: 'Elevations', tech: 'AutoCAD, Photoshop'}, {placeholderPDF: 'https://drive.google.com/uc?id=1WZXg3zKNszEBtliKMU_xqzpBfDx0TOqv#toolbar=0', project: 'Residential Renderings', tech: 'SketchUp, Photoshop'}, {placeholderPDF: 'https://drive.google.com/uc?id=1uvmNdK-9j3taPc6H3QKKk_nqaLcUOfHp#toolbar=0', project: 'Long Renderings', tech: 'AutoCAD, Photoshop'}, {placeholderPDF: 'https://drive.google.com/uc?id=1YSP7lIExPv8elY9vAx3j1DaPVJ2kBfqe#toolbar=0', project: 'Collection', tech: 'SketchUp, AutoCAD, Photoshop'}]
         } else if(this.$route.params.section === "graphic" ) {
